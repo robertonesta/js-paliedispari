@@ -1,7 +1,7 @@
 /*Palidroma
 Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma*/
 
-/*function Palindrome(userWord) {
+function Palindrome(userWord) {
    
 const userWordSplit = userWord.split('');
 console.log(userWordSplit);
@@ -19,7 +19,7 @@ if (userWord == reverseUserWord) {
 }
 }
 const userWord = prompt("type a word to see if it's a palindrome")
-const value = Palindrome(userWord) //call the function/*
+const value = Palindrome(userWord) //call the function
 
 
 /*Pari e Dispari
