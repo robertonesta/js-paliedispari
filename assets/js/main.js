@@ -36,12 +36,12 @@ function even_odds (){
     } else if (evenOdds == 'odds'){
         console.log(`odds`)
     } else {
-        console.log(`you cane only choose between even and odds`)
+        console.log(`you can only choose between even and odds`)
     }
 }
 
-
 // far scegliere all'utente un numero da 1 a 5
+
 // generare un numero random per il pc
 // sommare il numero dell'utente e il numero del pc
 // se la somma è uguale al pari o dispari scelto dall'utente, quest'ultimo ha vinto, altrimenti ha vinto il computer
