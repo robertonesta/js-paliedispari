@@ -61,7 +61,18 @@ const pcRandomNumber = Math.round((Math.random() * 4) + 1)
 console.log(pcRandomNumber)
 
 // sommare il numero dell'utente e il numero del pc
+
+const sum = usernumber + pcRandomNumber
 // se la somma è uguale al pari o dispari scelto dall'utente, quest'ultimo ha vinto, altrimenti ha vinto il computer
+
+let even;
+
+if (sum % 2 == 0){
+    even = true
+} else {
+    even = false
+}
+
 
 
 
