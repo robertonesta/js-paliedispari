@@ -29,32 +29,25 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un n
 
 let evenOdds = prompt("choose between even and odds")
 
-function even_odds(evenOdds){
-    if (evenOdds == 'even'){ 
-        console.log(`even`)
-    } else if (evenOdds == 'odds'){
-        console.log(`odds`)
-    } else {
-        alert(`you can only choose between even and odds`)
-        evenOdds = prompt("choose between even and odds")
-    }
+if (evenOdds == 'even'){ 
+    console.log(`even`)
+} else if (evenOdds == 'odds'){
+    console.log(`odds`)
+} else {
+    alert(`you can only choose between even and odds`)
 }
-even_odds(evenOdds);
-let userchoice = even_odds(evenOdds);
+
+let userchoice = "evenOdds";
 
 // far scegliere all'utente un numero da 1 a 5
 
 let usernumber = Number(prompt("now choose a number between 1 and 5"))
 
-function user_number(usernumber){
-    if ( usernumber <= 5 && usernumber >=1 ){
-        console.log(usernumber)
-    } else {
-        alert(`you can only choose a number between 1 and 5`)
-        usernumber = Number(prompt("now choose a number between 1 and 5"))
-    }
+if ( usernumber <= 5 && usernumber >=1 ){
+    console.log(usernumber)
+} else {
+    alert(`you can only choose a number between 1 and 5`)
 }
-user_number(usernumber);
 
 // generare un numero random per il pc
 
@@ -66,13 +59,15 @@ console.log(pcRandomNumber)
 const sum = usernumber + pcRandomNumber
 // se la somma è uguale al pari o dispari scelto dall'utente, quest'ultimo ha vinto, altrimenti ha vinto il computer
 
-let even;
 
-if (sum % 2 == 0){
-    even = true
-} else {
-    even = false
-}
+function even_Odds(number){
+
+if(sum % 2 == 0){
+    even = true;
+} else{ 
+    even = false;
+}}  
+let even
 // e il vincitore è...
 
 if (userchoice == even) {
