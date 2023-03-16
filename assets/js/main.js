@@ -1,7 +1,7 @@
 /*Palidroma
 Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola inserita è palindroma*/
 
-function Palindrome(userWord) {
+/*function Palindrome(userWord) {
    
 const userWordSplit = userWord.split('');
 console.log(userWordSplit);
@@ -19,7 +19,7 @@ if (userWord == reverseUserWord) {
 }
 }
 const userWord = prompt("type a word to see if it's a palindrome")
-const value = Palindrome(userWord) //call the function
+const value = Palindrome(userWord) //call the function/*
 
 
 /*Pari e Dispari
@@ -28,19 +28,32 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un n
 // far scegliere pari o dispari all'utente
 
 let evenOdds = prompt("choose between even and odds")
-console.log(evenOdds)
 
-function even_odds (){
+function even_odds(evenOdds){
     if (evenOdds == 'even'){ 
         console.log(`even`)
     } else if (evenOdds == 'odds'){
         console.log(`odds`)
     } else {
-        console.log(`you can only choose between even and odds`)
+        alert(`you can only choose between even and odds`)
+        evenOdds = prompt("choose between even and odds")
     }
 }
+even_odds(evenOdds);
 
 // far scegliere all'utente un numero da 1 a 5
+
+let usernumber = Number(prompt("now choose a number between 1 and 5"))
+
+function user_number(usernumber){
+    if ( usernumber <= 5 && usernumber >=1 ){
+        console.log(usernumber)
+    } else {
+        alert(`you can only choose a number between 1 and 5`)
+        usernumber = Number(prompt("now choose a number between 1 and 5"))
+    }
+}
+user_number(usernumber);
 
 // generare un numero random per il pc
 // sommare il numero dell'utente e il numero del pc
