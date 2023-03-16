@@ -40,6 +40,7 @@ function even_odds(evenOdds){
     }
 }
 even_odds(evenOdds);
+let userchoice = even_odds(evenOdds);
 
 // far scegliere all'utente un numero da 1 a 5
 
@@ -71,6 +72,13 @@ if (sum % 2 == 0){
     even = true
 } else {
     even = false
+}
+// e il vincitore è...
+
+if (userchoice == even) {
+    console.log(`you won`)    
+} else {
+    console.log(`pc won`)
 }
 
 
